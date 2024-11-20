@@ -1,19 +1,64 @@
-# ASIMOV
-Projetos relacionados ao Curso ASIMOV
+# LocadoraCarros.py 🚗💻
+Um projeto desenvolvido durante o curso Data Science da ASIMOV, com o objetivo de criar um sistema de locação de veículos funcional e interativo.
 
-##Programa LocadoraCarros.py
+# 🎯 Objetivo do Projeto
+Este programa tem como proposta:
 
-  Ese programa é um dos projetos do curso Data Science da ASIMOV, a proposta dele é:
-    1 - Criar um programa de locação de carro
-    2 - O programa tem que ter uma interface onde verificamos os carros disponíveis, efetuamos o aluguel do veiculo e depois devolvemos.
+Criar um sistema simples e eficiente para locação de carros.  
+Disponibilizar uma interface onde é possível:  
+Verificar os carros disponíveis no portfólio.  
+Realizar o aluguel de veículos.  
+Efetuar a devolução de veículos alugados.  
 
-  Solução:
-    eu utilizei dicionarios para poder criar os modelos de carros e o valor da diária de cada.
-    O programa começa com 1 exemplo de carro no portifolio e no menu inicial podemos adicionar carro no portifolio
-    No Menu principal, podemos entao ir para alugar e esse redireciona para o portifolio
-    Apos escolher o carro desejado das opções disponiveis, é entao perguntado ao usuario quantos dias será a reserva.
-    O programa calcula o valor total das diarias do carro selecionao e retorna para o usuario se confirma ou não.
-    Apos a confirmação da reserva o carro selecionado é removido do portifolio e adicionado na lista de carros alugados.
-    Usuario se retornar ao menu de portifolio nao irá mais encontrar o carro que foi selecionado anteriormente.
-    no menu Devolução irá constar os carros alugados no momento e o usuario pode entao efetuar a devolução do carro selecionado
-    Após a devolução ser completada o carro em questão é devolvido para a lista de portifólio e removida da lista de Alugados.
+# 🔧 Solução Desenvolvida
+A estrutura do programa foi construída utilizando dicionários para gerenciar:  
+
+Modelos de carros disponíveis.  
+Valores das diárias de cada veículo.  
+Lista de veículos alugados.  
+
+### **Funcionamento do Programa** 
+
+1. **Inicialização:**
+![TelaIniciallocadoracarros](https://github.com/user-attachments/assets/7ca6ac86-4098-4c84-aed6-276bdbb8785a)
+
+  - O portfólio inicia com um exemplo de carro disponível.
+  - A partir do menu inicial, o usuário pode adicionar novos veículos ao portfólio.
+2. **Menu Principal:**
+  - **Opção Alugar:**
+    - Lista os carros disponíveis no portfólio.
+    - Permite ao usuário selecionar um carro e informar a quantidade de dias para locação.
+    - Calcula o valor total da reserva e solicita confirmação do usuário.
+    - Após a confirmação, o carro é removido do portfólio e adicionado à lista de veículos alugados.
+  - **Opção Devolução:**
+    - Exibe os carros atualmente alugados.
+    - Permite ao usuário selecionar um veículo para devolução.
+    - Após a devolução, o veículo é reintegrado ao portfólio e removido da lista de alugados.
+  - **Opção Adicionar:**
+    - Permite que o usuário adicione um carro e o valor da diária ao portifólio
+
+## 📋 Funcionalidades
+  - Adicionar novos carros ao portfólio.
+  - Listar veículos disponíveis para locação.
+  - Calcular e confirmar reservas com base na quantidade de dias escolhidos.
+  - Gerenciar lista de veículos alugados.
+  - Realizar devoluções de maneira simples e prática.
+
+## 📂 Estrutura do Projeto
+
+LocadoraCarros.py  
+├── Menu Principal  
+│   ├── Adicionar Carro  
+│   ├── Alugar Veículo  
+│   │   └── Seleção de Dias e Confirmação  
+│   ├── Devolução de Veículo  
+│   └── Sair do Programa  
+
+## 💡 Tecnologias Utilizadas
+- Python:
+  - Manipulação de dicionários.
+  - Interação com o usuário via terminal.
+  - Estruturas de repetição e condições para navegação no menu.
+
+## 📖 Sobre o Curso
+Este projeto é parte do curso Data Science da ASIMOV, que busca ensinar habilidades práticas e teóricas para resolver problemas reais utilizando ciência de dados e programação.
